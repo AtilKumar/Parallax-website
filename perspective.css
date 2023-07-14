@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto; /*content km hone pr normal behave krega but jyada hone pr scroll hoga*/
+    perspective: 10px; /*perspective on kr diya*/
+}
+.container{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center; /*adventure width ke center me aaya*/
+    align-items: center;  /*adventure height ke b center me aaya*/
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.mountain, .man{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;      /*is property se dono image container me fit ho jayegi*/
+}
+.mountain{
+    transform: translateZ(-40px);
+    scale: 5; /*scale transform ke saath bhi define kr sakte hai...  aur ha ye scale hai scaleZ nhi hai*/
+}
+.man{
+    transform: translateZ(-20px);
+    scale: 3;
+}
+/* ***********ADVENTURE STYLING*************** */
+.container h1{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    text-shadow: 2px 4px 10px rgb(45, 45, 45);
+    user-select: none;
+}
+/* ************SECTION STYLING*************** */
+section{
+    background: linear-gradient(to right, rgb(58, 57, 57), black);
+    color: white;
+}
+.adventure{
+    font-size: 4rem;
+    padding: 3rem 10rem 0 10rem;
+    line-height: 4rem;
+    /* border: 2px solid red; */
+}
+.para{
+    padding: 3rem 10rem;
+    font-size: 1.2rem;
+}
+.bg1{
+    background-image: url(/biking.jpg);
+}
+.bg2{
+    background-image: url(/paragliding.jpg);
+}
+.bg3{
+    background-image: url(/surfing.jpg);
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.button{
+    font-size: 3rem;
+    padding: 0 1rem;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

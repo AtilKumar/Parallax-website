@@ -1,0 +1,81 @@
+/* ----------------EXTRA SMALL SCREEN------------- */
+@media (max-width: 576px){
+    .container h1{
+        font-size: 3rem;
+    }
+    .adventure{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2rem;
+        padding: 5% 5% 0 5%;
+    }
+    .para{
+        font-size: 0.8rem;
+        padding: 5% 5%;
+    }
+    .button{
+        font-size: 1.5rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+    }
+    .bg3, .bg1{
+        background-position: 60%;
+    }
+    .bg2{
+        background-position: 40%;
+    }
+}
+/* -----------------SMALL SCREEN----------------- */
+@media(min-width: 577px) and (max-width: 768px){
+    .container h1{
+        font-size: 3.5rem;
+    }
+    .adventure{
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 2.5rem;
+        padding: 4% 8% 0 8%;
+    }
+    .para{
+        font-size: 1rem;
+        padding: 4% 8%;
+    }
+    .button{
+        font-size: 1.8rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 4px;
+    }
+    .bg3, .bg1{
+        background-position: 60%;
+    }
+    .bg2{
+        background-position: 40%;
+    }
+}
+/* ---------------MEDIUM SCREEN----------------- */
+@media(min-width: 769px) and (max-width: 992px){
+    .container h1{
+        font-size: 4rem;
+    }
+    .adventure{
+        font-size: 2.8rem;
+        text-align: center;
+        line-height: 2.8rem;
+        padding: 4% 12% 0 12%;
+    }
+    .para{
+        font-size: 1.2rem;
+        padding: 4% 10%;
+    }
+    .button{
+        font-size: 2rem;
+        padding: 0.4rem 1rem;
+        border-radius: 4px;
+    }
+    .bg3, .bg1{
+        background-position: 60%;
+    }
+    .bg2{
+        background-position: 40%;
+    }
+}
